@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_record"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bit2016.gugudanfighter.RecordActivity">
+
+    <TextView
+        android:text="최신기록!"
+        android:textSize="35sp"
+        android:textStyle="bold|italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="109dp"
+        android:id="@+id/textView2" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#BCBAE8"
+        android:stretchColumns="*"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="43dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="점수"
+                android:id="@+id/text_score"
+                />
+
+            <TextView
+                android:text="기록시간"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:id="@+id/text_completeseconds" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            >
+            <TextView
+                android:text="30"
+                />
+            <TextView
+                android:text="10초"
+            />
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
